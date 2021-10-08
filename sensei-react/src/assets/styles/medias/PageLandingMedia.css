@@ -1,0 +1,67 @@
+/* ----Responsive---------- */
+@media (max-width: 699px) {
+  :root {
+    font-size: 40%;
+    /*Modificar as medidas rem*/
+  }
+
+  #container-home {
+    max-width: fit-content;
+  }
+}
+
+@media (min-width: 700px) {
+  #container-home {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  #page-landing #container-home {
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "title title image"
+      "button button texting";
+  }
+
+  .logo-container {
+    grid-area: title;
+    text-align: center;
+    align-self: center;
+    width: 68.6rem;
+    height: 0%;
+  }
+
+  .logo-container h2 {
+    font-size: 9.6rem;
+    margin: 0 0 0 7.4rem;
+  }
+
+  .logo-container p {
+    font-size: 5.8rem;
+    margin: 0 0 0 0;
+  }
+
+  .image-principal {
+    grid-area: image;
+    margin: -4.8rem 0 -5.8rem 3.6rem;
+    padding: 0;
+    width: 40.8rem;
+  }
+  .buttons-container {
+    grid-area: button;
+    align-self: center;
+    width: 55rem;
+  }
+
+  .comments {
+    grid-area: texting;
+    align-self: center;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+}

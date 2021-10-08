@@ -1,0 +1,134 @@
+#container-home {
+  height: 100vh;
+  width: 90vw;
+  max-width: 70rem;
+}
+
+/* ----Page-Landing---------- */
+#page-lading {
+  background-color: var(--color-background);
+}
+
+/* ----header-content---------- */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a.login-btn {
+  font: 600 1.6rem "Encode Sans";
+
+  margin-bottom: 0.6rem;
+  padding: 0.8rem;
+  border: 0;
+  border-radius: 0.8rem;
+
+  height: 3.2rem;
+  width: 8.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: var(--color-text-login);
+
+  background-color: var(--color-button);
+
+  text-decoration: none;
+}
+
+a.login-btn:hover {
+  background: var(--color-button-give-classes);
+}
+
+.header-content a.login-btn img {
+  margin-left: 0.6rem;
+  width: 2.4rem;
+}
+
+/* ----Logo---------- */
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.logo-container h2 {
+  font: 800 8.6rem/5.8rem "Encode Sans";
+  margin-top: 6.8rem;
+  color: var(--color-title);
+}
+
+.logo-container p {
+  font: 200 4.8rem "Encode Sans";
+  margin-right: 4.5rem;
+  color: var(--color-title);
+}
+
+/* ----Image-Principal---------- */
+.image-principal {
+  width: 70%;
+  padding: 2rem 2rem 0;
+  display: flex;
+  margin: 3rem auto;
+}
+
+/* ----Footer-Landing---------- */
+
+/* ----Buttons---------- */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin: 3.2rem 0;
+}
+
+.buttons-container a {
+  width: 25rem;
+  height: 8.5rem;
+
+  margin-right: 1.8rem;
+  border-radius: 0.8rem;
+
+  font: 700 2.8rem "Encode Sans";
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+  color: var(--color-button-text);
+
+  transition: background 0.4s;
+  /* Para o hover dos buttons serem mais suaves */
+}
+
+.buttons-container a.study {
+  color: var(--color-button-study);
+  border: 0.4rem solid var(--color-button-study);
+  margin-left: 3%;
+}
+
+.buttons-container a.study:hover {
+  background: var(--color-button-study);
+  color: var(--color-button-text);
+}
+
+.buttons-container a.give-classes {
+  background: var(--color-button-give-classes);
+}
+
+.buttons-container a.give-classes:hover {
+  background: var(--color-transition-give-classes);
+}
+
+/* ----comments---------- */
+.comments {
+  font: 300 1.95rem "Poppins";
+
+  color: var(--color-comments);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

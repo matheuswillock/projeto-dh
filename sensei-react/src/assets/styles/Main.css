@@ -1,0 +1,72 @@
+:root {
+  --color-title: #486173;
+  --color-background: #ffffff;
+  --color-label-input: #48617381;
+  --color-background-input: #ffffff;
+  --color-button: #39a2ae;
+  --color-text-login: #eeeeee;
+  --color-button-dark: #379ba6;
+  --color-input-border: #39a2ae;
+  --color-title-sensei: #000;
+  --color-default: #142361;
+  --color-button-sensei: #024ea8;
+  --color-button-sensei-dark: #417794;
+  --color-description-sensei: #0b5a41;
+  --color-button-text: #ffffff;
+  --color-box-sensei: #1fd7003d;
+  --color-button-study: #75e4b3;
+  --color-button-give-classes: #39a2ae;
+  --color-transition-give-classes: #3dc5b5;
+  --color-name-perfil: #0e103d;
+  --color-comments: #0e103d78;
+
+  /*
+     - Tamanho da fonte padrão: 16px = 100% => 1rem.
+     - O rem é relativo a fonte que foi setado no root da página.
+     
+     16px -> 100%
+     9.6px -> 60%
+  
+     - Quando usarmos a unidade de medida em, sempre será relativo aa medida do elemento pai.
+    
+    */
+
+  font-size: 60%;
+  /* controle das medidas rem 
+        Porque vamos aplicar o conceito de responsividade Mobile first.
+    */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html,
+body {
+  /* Boa prática para ocupar toda a visão do documento */
+  height: 100vh;
+}
+
+body #root {
+  background: whitesmoke;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 1.6rem "Poppins";
+}
+
+@media (min-width: 700px) {
+  :root {
+    font-size: 62.5%;
+  }
+
+  a.login-btn {
+    margin-bottom: 0;
+  }
+}

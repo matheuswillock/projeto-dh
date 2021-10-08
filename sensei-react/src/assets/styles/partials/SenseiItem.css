@@ -1,0 +1,82 @@
+/* ----Main -> article -> header ---------- */
+#page-search .senseis-item {
+  background: linear-gradient(360deg, #fff, #7ab1c7) no-repeat;
+  border: 0.1rem solid #7ab1c7bd;
+  border-radius: 0.8rem;
+  margin-top: 2.4rem;
+}
+
+#page-search .senseis-item header {
+  padding: 3.2rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+#page-search .senseis-item header img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+#page-search .senseis-item header div {
+  margin-left: 2.4rem;
+}
+
+#page-search .senseis-item header div strong {
+  font: 700 2.4rem "Encode Sans";
+  display: block;
+  color: var(--color-title-sensei);
+}
+
+#page-search .senseis-item header div span {
+  font: 300 1.8rem "Poppins";
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--color-title);
+}
+
+#page-search .senseis-item p {
+  padding: 0 2rem;
+
+  font: 500 1.6rem/2.4rem "Encode Sans";
+  color: var(--color-description-sensei);
+}
+
+/* ----Main -> article -> footer---------- */
+#page-search .senseis-item footer {
+  padding: 3.2rem 2rem;
+}
+
+#page-search .senseis-item footer button {
+  width: 60%;
+  height: 5.6rem;
+  background: var(--color-button);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+
+  font: 600 1.8rem "Poppins";
+
+  text-decoration: none;
+
+  transition: background 0.2s;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-search .senseis-item footer button:hover {
+  background: var(--color-button-dark);
+}
+
+/* =============== @media queries =================== */
+
+@media (min-width: 700px) {
+  .senseis-item header,
+  .senseis-item footer {
+    padding: 32px;
+  }
+}

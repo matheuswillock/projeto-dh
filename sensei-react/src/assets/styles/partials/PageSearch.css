@@ -1,0 +1,102 @@
+#page-search #container-search {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* ----Header---------- */
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Alterando a altura de todo Header */
+.page-header .top-bar-container a {
+  transition: opacity 0.2s;
+  height: 1.6rem;
+  width: 6rem;
+}
+
+.page-header .top-bar-container a:hover {
+  opacity: 0.6;
+}
+
+.page-header .header-content-search {
+  width: 80vw;
+  margin: 13.2rem auto 6.2rem;
+  position: relative;
+}
+
+.page-header .header-content-search strong {
+  font: 700 3.2rem "Encode Sans";
+
+  line-height: 3.8rem;
+  color: var(--color-title);
+}
+
+/* ----Header => Search ---------- */
+/* Altura do container search */
+#search-senseis {
+  margin-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+#search-senseis .select-block {
+  margin-bottom: 1.4rem;
+}
+
+#search-senseis button {
+  width: 90%;
+  height: 5.6rem;
+
+  align-self: center;
+
+  border: 0;
+  border-radius: 0.8rem;
+
+  background: var(--color-button);
+  color: var(--color-button-text);
+  cursor: pointer;
+
+  font: 700 1.6rem "Poppins";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background 0.2s;
+}
+
+#search-senseis button:hover {
+  background: var(--color-button-dark);
+}
+
+#search-senseis .input-block label,
+#search-senseis .select-block label {
+  font-size: 1.8rem;
+  color: var(--color-label-input);
+}
+
+#search-senseis .input-block input,
+#search-senseis .select-block select {
+  width: 100%;
+  height: 5.6rem;
+  margin-top: 0.8rem;
+
+  border-radius: 0.8rem;
+  border: 0.2rem solid var(--color-input-border);
+  outline: none;
+
+  padding: 0 1.6rem;
+
+  font: 1.6rem "Poppins";
+
+  background-color: var(--color-background-input);
+}
+
+/* ----Main---------- */
+#page-search main {
+  margin: 3.2rem auto;
+  width: 90vw;
+}

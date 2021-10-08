@@ -1,0 +1,64 @@
+/* ----Media-query (Responsive)---------- */
+@media (min-width: 700px) {
+  #page-search #container-search {
+    max-width: 100vw;
+  }
+
+  .page-header {
+    height: 340px;
+  }
+
+  .page-header .header-content-search {
+    max-width: 740px;
+
+    margin: 0 auto;
+
+    flex: 1 1;
+
+    padding-bottom: 48px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .page-header .header-content-search strong {
+    max-width: 350px;
+  }
+
+  form #search-senseis {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+
+    position: absolute;
+    bottom: -10.8rem;
+  }
+
+  #search-senseis button {
+    margin: 3.5rem 0;
+  }
+
+  #page-search main {
+    padding: 32px 0;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+
+  #search-senseis .select-block {
+    margin-bottom: 0;
+  }
+
+  .senseis-item p {
+    padding: 0 32px;
+  }
+
+  .senseis-item footer button {
+    width: 100%;
+    font-size: 16px;
+    justify-content: center;
+    font-weight: 700;
+
+    margin: 0 auto;
+  }
+}
