@@ -2,19 +2,19 @@
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.438);
   border-radius: 0.8rem;
-  width: 70%;
-  margin: 0 auto;
+  width: 75%;
+  margin: 20rem auto 0;
 }
 
 .apresentation-sensei article {
   width: 90%;
-  /* background: red; */
   margin: 2rem auto;
 }
 
 .apresentation-sensei article header {
   display: flex;
   flex-direction: row;
+  margin-bottom: 2rem;
 }
 
 .apresentation-sensei header img {
@@ -27,47 +27,71 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .apresentation-sensei-bio strong {
-  font: 700 2.4rem "Encode Sans";
+  font: 700 2.4rem "Poppins";
+  color: var(--color-title-sensei);
 }
 
 .apresentation-sensei-bio span {
-  font: 400 1.4rem/3.2rem "Encode Sans";
+  font: 300 1.6rem/1.8rem "Encode Sans";
+  color: rgba(0, 0, 0, 0.753);
 }
 
-.github-sensei {
-  background: rgb(148, 147, 147);
-  border: 1px solid black;
-  border-radius: 0.8rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 20rem;
-  text-decoration: none;
-  color: white;
-  font: 400 1.5rem/1.4rem "Poppins";
-  padding: 1rem 1rem;
+.main-article-sensei {
+  margin: 0 0 4.2rem 3.4rem;
 }
 
-.github-sensei img {
-  width: 1.8rem;
+.main-article-sensei h2 {
+  font: 800 3.6rem "Poppins";
+  color: var(--color-title);
+  margin-left: 2rem;
+}
+
+.main-article-sensei p {
+  font: 400 1.8rem/2.4rem "Poppins";
+  color: rgba(0, 0, 0, 0.753);
 }
 
 .apresentation-sensei footer {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: start;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.apresentation-sensei footer a {
+.relationship-sensei a:first-child {
+  margin-right: 1rem;
 }
 
-.apresentation-sensei footer img {
-  width: 1.4rem;
-  align-self: center;
+.relationship-sensei a {
+  font: 500 1.4rem "Encode Sans";
+  color: var(--color-title);
+}
+
+.relationship-sensei a strong {
   margin-right: 0.2rem;
+  font: 700 1.6rem "Encode Sans";
+  color: var(--color-title);
+}
+
+.relationship-sensei img {
+  width: 1.6rem;
+  align-self: center;
+  margin-right: 0.4rem;
+}
+
+footer button {
+  background: var(--color-button);
+  border: 0;
+  border-radius: 0.8rem;
+
+  cursor: pointer;
+  color: white;
+
+  width: 18rem;
+  height: 5rem;
+
+  font: 700 1.8rem/2.2rem "Encode Sans";
 }

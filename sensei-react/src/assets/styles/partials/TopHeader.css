@@ -11,6 +11,15 @@
   justify-content: space-between;
 }
 
+.top-bar-container a {
+  height: 1.6rem;
+  transition: all 1.6s;
+}
+
+.top-bar-container a:hover {
+  opacity: 0.4;
+}
+
 .menu-container {
   margin-top: 21.5rem;
   border: 0;
@@ -48,8 +57,7 @@
 .menu-container .nav-content li {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  flex-direction: row;
+  justify-content: flex-start;
 
   width: 100%;
   padding: 1.2rem 2.4rem 1.2rem 1.2rem;
@@ -71,7 +79,7 @@
 
 .menu-container .nav-content li img {
   width: 2rem;
-  margin-right: 1rem;
+  margin-right: 2.6rem;
 }
 
 .menu.active {

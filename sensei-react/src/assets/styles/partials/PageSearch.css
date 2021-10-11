@@ -9,17 +9,6 @@
   flex-direction: column;
 }
 
-/* Alterando a altura de todo Header */
-.page-header .top-bar-container a {
-  transition: opacity 0.2s;
-  height: 1.6rem;
-  width: 6rem;
-}
-
-.page-header .top-bar-container a:hover {
-  opacity: 0.6;
-}
-
 .page-header .header-content-search {
   width: 80vw;
   margin: 13.2rem auto 6.2rem;
@@ -39,7 +28,6 @@
   margin-top: 3.2rem;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   justify-content: center;
 }
 

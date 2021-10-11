@@ -12,9 +12,14 @@ export default function ViewClasses() {
 
     <div id="page-classes">
       <div id="container-classes">
-        <TopHeader/>
+        <div className="header-sensei-show">
+          <TopHeader/>
+        </div>
 
-        {/* <BannerSensei/> */}
+        <div className="main-article-sensei">
+          <BannerSensei/>
+        </div>
+
         
       </div>
     </div>

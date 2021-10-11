@@ -1,22 +1,16 @@
 import React, {useRef, useState} from 'react';
-import {useOutsideClick} from '../components/useOutsideclick'
-
 import { Link } from 'react-router-dom';
-// import PerfilImg from '../assets/images/Perfil-image/perfil.svg';
 
 import UserImg from '../assets/images/icon.svg';
+import LogoutImg from '../assets/images/logout.svg';
+import KunaiImg from '../assets/images/kunai.svg';
 
 
 export default function PerfilContent( props ) {
   const dropDownRef = useRef(null);
-
   const [isActive, setIsActive] = useState(false)
-
-
   const onClick = () => setIsActive(!isActive)
-
-  console.log(isActive)
-
+  // console.log(isActive)
 
   return(
 
@@ -27,21 +21,20 @@ export default function PerfilContent( props ) {
 
       <nav 
         ref={dropDownRef}
-
         className={`menu ${isActive ? "active" : "inactive"}`}
       >
         <ul className="nav-content">
           <li>
-            <img src={UserImg}/>
-            <Link to='#'>Home</Link>
+            <img src={UserImg} alt="Ver perfil"/>
+            <Link to='#'>Perfil</Link>
           </li>
           <li>
-            <img src={UserImg}/>
-            <Link to='#'> Home</Link>
+            <img src={KunaiImg} alt="ver senseis"/>
+            <Link to='#'>Senseis</Link>
           </li>
           <li>
-            <img src={UserImg}/>
-            <Link to='/#'>Casa</Link>
+            <img src={LogoutImg} alt="Sair da academia" />
+            <Link to='#'>Sair</Link>
           </li>
         </ul>
       </nav>
