@@ -5,6 +5,7 @@ import BannerSensei from '../components/BannerSensei';
 
 import '../assets/styles/Main.css';
 
+
 export default function ViewClasses() {
 
   return(
@@ -13,7 +14,7 @@ export default function ViewClasses() {
       <div id="container-classes">
         <TopHeader/>
 
-        <BannerSensei/>
+        {/* <BannerSensei/> */}
         
       </div>
     </div>
