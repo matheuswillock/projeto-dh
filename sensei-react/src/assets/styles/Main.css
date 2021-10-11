@@ -11,7 +11,7 @@
   --color-default: #142361;
   --color-button-sensei: #024ea8;
   --color-button-sensei-dark: #417794;
-  --color-description-sensei: #0b5a41;
+  --color-description-sensei: #062660d1;
   --color-button-text: #ffffff;
   --color-box-sensei: #1fd7003d;
   --color-button-study: #75e4b3;
@@ -19,6 +19,7 @@
   --color-transition-give-classes: #3dc5b5;
   --color-name-perfil: #0e103d;
   --color-comments: #0e103d78;
+  --color-border-perfil: #99999999;
 
   /*
      - Tamanho da fonte padrão: 16px = 100% => 1rem.
@@ -48,9 +49,6 @@ html,
 body {
   /* Boa prática para ocupar toda a visão do documento */
   height: 100vh;
-}
-
-body #root {
   background: whitesmoke;
 }
 

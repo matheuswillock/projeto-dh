@@ -29,7 +29,8 @@
 }
 
 #page-search .senseis-item header div span {
-  font: 300 1.8rem "Poppins";
+  font: 200 1.8rem "Poppins";
+  font-style: italic;
   display: block;
   margin-top: 0.4rem;
   color: var(--color-title);
@@ -47,7 +48,7 @@
   padding: 3.2rem 2rem;
 }
 
-#page-search .senseis-item footer button {
+#page-search .senseis-item footer .button-sensei {
   width: 60%;
   height: 5.6rem;
   background: var(--color-button);
@@ -68,7 +69,7 @@
   justify-content: center;
 }
 
-#page-search .senseis-item footer button:hover {
+#page-search .senseis-item footer .button-sensei:hover {
   background: var(--color-button-dark);
 }
 

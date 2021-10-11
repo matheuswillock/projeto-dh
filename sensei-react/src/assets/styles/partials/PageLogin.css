@@ -1,6 +1,6 @@
 #page-login #container-login {
   height: 100vh;
-  width: 90vw;
+  width: 100vw;
   max-width: 70rem;
   margin: -4.9rem auto 0;
 }
@@ -20,8 +20,7 @@
 .content-login {
   margin: 10rem auto;
   background: white;
-  max-width: 46rem;
-  min-height: 40vh;
+  max-width: 44rem;
   padding: 5.4rem 5.4rem 2.6rem;
   box-shadow: 0.8rem 0.8rem 1.8rem #4b5b7d;
   border: 0.2rem solid #4b5b7d;

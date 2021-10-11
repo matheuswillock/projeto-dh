@@ -1,0 +1,73 @@
+.apresentation-sensei {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.438);
+  border-radius: 0.8rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.apresentation-sensei article {
+  width: 90%;
+  /* background: red; */
+  margin: 2rem auto;
+}
+
+.apresentation-sensei article header {
+  display: flex;
+  flex-direction: row;
+}
+
+.apresentation-sensei header img {
+  width: 11rem;
+  border: 0;
+  border-radius: 50%;
+}
+
+.apresentation-sensei-bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.apresentation-sensei-bio strong {
+  font: 700 2.4rem "Encode Sans";
+}
+
+.apresentation-sensei-bio span {
+  font: 400 1.4rem/3.2rem "Encode Sans";
+}
+
+.github-sensei {
+  background: rgb(148, 147, 147);
+  border: 1px solid black;
+  border-radius: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20rem;
+  text-decoration: none;
+  color: white;
+  font: 400 1.5rem/1.4rem "Poppins";
+  padding: 1rem 1rem;
+}
+
+.github-sensei img {
+  width: 1.8rem;
+}
+
+.apresentation-sensei footer {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: start;
+}
+
+.apresentation-sensei footer a {
+}
+
+.apresentation-sensei footer img {
+  width: 1.4rem;
+  align-self: center;
+  margin-right: 0.2rem;
+}

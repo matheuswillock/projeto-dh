@@ -3,12 +3,19 @@
 }
 
 .logo-icon img {
-  width: 12rem;
-  height: 12rem;
+  width: 8rem;
+  height: 8rem;
 }
 
 .logo-icon:hover {
   opacity: 0.6;
+}
+
+@media (max-width: 699px) {
+  .logo-icon img {
+    width: 12rem;
+    height: 12rem;
+  }
 }
 
 @media (min-width: 1100px) {

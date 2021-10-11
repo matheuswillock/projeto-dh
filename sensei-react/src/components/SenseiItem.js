@@ -1,5 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import api from '../services/api'
+import { Link } from 'react-router-dom';
+
 import '../assets/styles/partials/SenseiItem.css'
 
 export default function SenseiItem() {
@@ -33,9 +35,9 @@ export default function SenseiItem() {
 
       <footer>
         
-        <button type="button">
+        <Link to="/viewclasses" className="button-sensei" type="button" >
           Ver as Aulas
-        </button>
+        </Link>
 
       </footer>
 
