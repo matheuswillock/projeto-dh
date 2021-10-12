@@ -3,7 +3,7 @@
   border: 1px solid rgba(0, 0, 0, 0.438);
   border-radius: 0.8rem;
   width: 75%;
-  margin: 20rem auto 0;
+  margin: 26rem auto 0;
 }
 
 .apresentation-sensei article {
@@ -41,7 +41,7 @@
 }
 
 .main-article-sensei {
-  margin: 0 0 4.2rem 3.4rem;
+  margin: 0 0 2.2rem 3.4rem;
 }
 
 .main-article-sensei h2 {
@@ -55,10 +55,42 @@
   color: rgba(0, 0, 0, 0.753);
 }
 
+.main-article-sensei img {
+  width: 2.5%;
+}
+
 .apresentation-sensei footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.information-sensei {
+  margin-top: 1.6rem;
+}
+
+.information-sensei li {
+  list-style-type: none;
+}
+
+.information-sensei .information-sensei-flex {
+  text-decoration: none;
+
+  display: flex;
+  align-items: center;
+}
+
+.information-sensei .information-sensei-flex span {
+  font: 400 1.8rem "Roboto";
+  align-self: center;
+  color: #486173;
+}
+
+.information-sensei .information-sensei-flex img {
+  width: 3.6rem;
+  height: 3.6rem;
+  margin-right: 0.6rem;
+  margin-bottom: 0.8rem;
 }
 
 .relationship-sensei a:first-child {
@@ -66,18 +98,18 @@
 }
 
 .relationship-sensei a {
-  font: 500 1.4rem "Encode Sans";
+  font: 400 1.6rem "Encode Sans";
   color: var(--color-title);
 }
 
 .relationship-sensei a strong {
   margin-right: 0.2rem;
-  font: 700 1.6rem "Encode Sans";
+  font: 700 1.8rem "Encode Sans";
   color: var(--color-title);
 }
 
 .relationship-sensei img {
-  width: 1.6rem;
+  width: 2rem;
   align-self: center;
   margin-right: 0.4rem;
 }
@@ -94,4 +126,15 @@ footer button {
   height: 5rem;
 
   font: 700 1.8rem/2.2rem "Encode Sans";
+}
+
+@media (min-width: 900px) {
+  .relationship-sensei {
+    margin-left: 3rem;
+  }
+
+  footer button {
+    width: 20rem;
+    height: 6rem;
+  }
 }

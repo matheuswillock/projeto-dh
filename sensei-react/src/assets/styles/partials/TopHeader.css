@@ -51,7 +51,7 @@
 .menu-container .nav-content {
   border: 0.2rem solid var(--color-input-border);
   border-radius: 0.8rem;
-  background: var(--color-input-background);
+  background: white;
 }
 
 .menu-container .nav-content li {
@@ -73,7 +73,7 @@
   text-decoration: none;
 
   text-align: center;
-  font: 500 1.4rem "Roboto";
+  font: 500 1.8rem "Roboto";
   color: gray;
 }
 

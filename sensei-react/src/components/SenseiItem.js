@@ -9,7 +9,7 @@ export default function SenseiItem() {
 
   useEffect(() => {
     api
-      .get("https://api.github.com/users/matheuswillock")
+      .get("https://api.github.com/users/filipedeschamps")
       .then((response) => setUser(response.data))
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
