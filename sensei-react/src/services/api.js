@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Criando a var axios constando a url base;
 const api = axios.create({
-  baseUrl: "http://api.github.com/"
+  baseUrl: "https://api.github.com/users/"
 })
 
 // Exportando a api

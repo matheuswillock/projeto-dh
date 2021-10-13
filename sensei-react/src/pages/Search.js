@@ -4,6 +4,7 @@ import React from 'react';
 import SearchForm from '../components/SearchForm';
 import SenseiItem from '../components/SenseiItem';
 import TopHeader from '../components/TopHeader';
+import FooterPage from '../components/FooterPage';
 
 
 // Import styles
@@ -38,6 +39,8 @@ export default function Search() {
         </main>
         
       </div>
+
+      <FooterPage />
     </div>
   );
 }

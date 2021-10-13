@@ -21,7 +21,7 @@ export default function Login() {
           
           <FormLogin/>
 
-          <div className="separator"></div>
+          <div className="separator-sensei"></div>
 
           <div id="register-group-btn">
             <Link className="options-btn" to="/register" >

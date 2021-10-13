@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-
 import api from '../services/api'
 
 import StarImg  from '../assets/images/star.svg';
@@ -7,7 +6,6 @@ import FollowerImg from '../assets/images/followers.svg'
 import GpsImg from '../assets/images/localizacao.svg';
 import YoutubeImg from '../assets/images/youtube.svg';
 import BlogImg from '../assets/images/blog.svg';
-import InstaImg from '../assets/images/instagram.svg';
 
 import '../assets/styles/partials/BannerSensei.css'
 
@@ -54,6 +52,7 @@ export default function BannerSensei() {
           </p>
 
           <div className="information-sensei">
+            
             <ul>
               
               <li>
@@ -66,7 +65,7 @@ export default function BannerSensei() {
               <li>
                 <a href={user?.blog} className="information-sensei-flex">
                   <img src={BlogImg} alt="" />
-                  <span>Blog do Sensei</span>
+                  <span>Sensei Blog</span>
                 </a>
               </li>
 
@@ -79,14 +78,13 @@ export default function BannerSensei() {
               
             </ul>
             
-            
           </div>
-          
         </div>
 
+        <div className="separator-sensei"></div>
         
-
         <footer>
+
           <div className="relationship-sensei">
 
             <a>

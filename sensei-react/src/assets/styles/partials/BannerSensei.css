@@ -1,9 +1,9 @@
 .apresentation-sensei {
   background: white;
-  border: 1px solid rgba(0, 0, 0, 0.438);
+  border: 0.2rem solid rgba(0, 0, 0, 0.438);
   border-radius: 0.8rem;
   width: 75%;
-  margin: 26rem auto 0;
+  margin: 22rem auto 0;
 }
 
 .apresentation-sensei article {
@@ -31,7 +31,7 @@
 }
 
 .apresentation-sensei-bio strong {
-  font: 700 2.4rem "Poppins";
+  font: 700 2.8rem "Encode Sans";
   color: var(--color-title-sensei);
 }
 
@@ -39,6 +39,12 @@
   font: 300 1.6rem/1.8rem "Encode Sans";
   color: rgba(0, 0, 0, 0.753);
 }
+
+/* main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+} */
 
 .main-article-sensei {
   margin: 0 0 2.2rem 3.4rem;
@@ -57,6 +63,14 @@
 
 .main-article-sensei img {
   width: 2.5%;
+}
+
+.separator-sensei {
+  content: "";
+  height: 0.1rem;
+  width: 100%;
+  background: #a8a8b3;
+  margin: 1.6rem auto 3rem;
 }
 
 .apresentation-sensei footer {
@@ -136,5 +150,6 @@ footer button {
   footer button {
     width: 20rem;
     height: 6rem;
+    margin-right: 3rem;
   }
 }
