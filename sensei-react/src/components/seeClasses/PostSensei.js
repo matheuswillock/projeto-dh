@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import api from '../services/api'
+import api from '../../services/api'
 
-import '../assets/styles/partials/PostSensei.css';
+import '../../assets/styles/partials/PostSensei.css';
 
 export default function PostSensei( props ) {
 

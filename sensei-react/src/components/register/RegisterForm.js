@@ -2,9 +2,9 @@ import React from 'react';
 import { Formik, Form, useField } from "formik";
 import * as Yup from 'yup';
 
-import academiaImg from "../assets/images/academia.svg";
+import academiaImg from "../../assets/images/academia.svg";
 
-export default function FormLogin() {
+export default function RegisterForm() {
 
   const InputField = ({ label, ...props }) => {
 
@@ -25,9 +25,8 @@ export default function FormLogin() {
     );
   };
 
-  return (
+  return(
     <Formik
-
       // Observe que temos que inicializar TODOS os campos com valores. Esses
       // pode vir de adereços, mas como não queremos preencher previamente este formulário,
       // usamos apenas uma string vazia. Se não fizermos isso, React vai gritar
@@ -74,10 +73,10 @@ export default function FormLogin() {
         <div className="form">
 
           <span>
-            Entre na academia
+            Cadastre-se na academia
           </span>
 
-          <img src={ academiaImg } alt="Academia Ninja" />
+          <img src={academiaImg} alt="Academia Ninja" />
 
           <div className="input-field">
 
@@ -85,7 +84,21 @@ export default function FormLogin() {
               id="input-field-username" 
               name="username"
               type="text"
-              placeholder="Ninja"
+              placeholder="Seu nome ninja"
+            />
+
+            <InputField
+              id="input-field-email"
+              name="email"
+              type="email"
+              placeholder=" Seu email ninja"
+            />
+
+            <InputField
+              id="input-field-date-birth"
+              name="date-birth"
+              type="date"
+              placeholder="Data de nascimento"
             />
 
             <InputField
@@ -94,9 +107,16 @@ export default function FormLogin() {
               type="password"
               placeholder="Digite uma senha"
             />
+
+            <InputField
+              id="input-field-password"
+              name="password"
+              type="password"
+              placeholder="Confirme a senha"
+            />
           </div>
 
-          <button className="btn-submit"type="submit">Entrar</button>
+          <button className="btn-submit"type="submit">Cadastrar-se</button>
 
         </div>
 
@@ -104,9 +124,4 @@ export default function FormLogin() {
 
     </Formik>
   );
-
-
-
-  
-  
 }

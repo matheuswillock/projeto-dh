@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import api from '../services/api'
+import api from '../../services/api'
 
-import StarImg  from '../assets/images/star.svg';
-import FollowerImg from '../assets/images/followers.svg'
-import GpsImg from '../assets/images/localizacao.svg';
-import YoutubeImg from '../assets/images/youtube.svg';
-import BlogImg from '../assets/images/blog.svg';
+import StarImg  from '../../assets/images/star.svg';
+import FollowerImg from '../../assets/images/followers.svg'
+import GpsImg from '../../assets/images/localizacao.svg';
+import YoutubeImg from '../../assets/images/youtube.svg';
+import BlogImg from '../../assets/images/blog.svg';
 
-import '../assets/styles/partials/BannerSensei.css'
+import '../../assets/styles/partials/BannerSensei.css'
 
 export default function BannerSensei() {
   const [user, setUser] = useState();

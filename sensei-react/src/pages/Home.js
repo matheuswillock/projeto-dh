@@ -1,7 +1,8 @@
 import React from 'react';
+
 import LogoHome from '../components/LogoHome';
-import ButtonLogin from '../components/ButtonLogin';
-import ButtonsContainer from '../components/ButtonsContainer'
+import ButtonLogin from '../components/home/ButtonLogin';
+import ButtonsContainer from '../components/home/ButtonsContainer'
 
 import ImagePrincipal from '../assets/images/jiraya-sensei.svg';
 

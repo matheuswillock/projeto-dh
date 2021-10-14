@@ -1,11 +1,10 @@
 import React from 'react';
 
 // Import components
-import SearchForm from '../components/SearchForm';
-import SenseiItem from '../components/SenseiItem';
+import SearchForm from '../components/search/SearchForm';
+import SenseiItem from '../components/search/SenseiItem';
 import TopHeader from '../components/TopHeader';
 import FooterPage from '../components/FooterPage';
-
 
 // Import styles
 import '../assets/styles/Main.css';
@@ -35,7 +34,7 @@ export default function Search() {
         </header>
 
         <main>
-          <SenseiItem />
+          <SenseiItem />   
         </main>
         
       </div>

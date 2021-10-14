@@ -1,14 +1,13 @@
 import React from 'react';
 
 import TopHeader from '../components/TopHeader';
-import BannerSensei from '../components/BannerSensei';
-import PostSensei from '../components/PostSensei';
-
+import BannerSensei from '../components/seeClasses/BannerSensei';
+import PostSensei from '../components/seeClasses/PostSensei';
 import FooterPage from '../components/FooterPage'
 
 import '../assets/styles/Main.css';
 
-export default function ViewClasses() {
+export default function SeeClasses() {
 
   return(
 

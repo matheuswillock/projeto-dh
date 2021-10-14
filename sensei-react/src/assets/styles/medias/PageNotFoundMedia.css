@@ -1,0 +1,25 @@
+@media (min-width: 900px) {
+  #container-not-found {
+    display: grid;
+    grid-template:
+      "header main"
+      "footer footer";
+    column-gap: 6rem;
+    row-gap: 8rem;
+    padding: 1rem;
+  }
+
+  #container-not-found h2 {
+    grid-area: header;
+    font-size: 30rem;
+  }
+
+  .content-location {
+    grid-area: main;
+  }
+
+  .btn-error {
+    justify-self: center;
+    grid-area: footer;
+  }
+}

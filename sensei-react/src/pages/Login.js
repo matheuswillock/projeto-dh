@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FormLogin from '../components/FormLogin';
+
+import FormLogin from '../components/login/FormLogin';
 import LogoHome from '../components/LogoHome';
 
 import '../assets/styles/Main.css';
