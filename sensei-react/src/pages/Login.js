@@ -9,18 +9,19 @@ import '../assets/styles/partials/PageLogin.css';
 import '../assets/styles/medias/PageLoginMedia.css';
 
 export default function Login() {
-  return(
+
+  return (
     <div id="page-login">
 
       <div id="container-login">
 
         <div className="header-login">
-          <LogoHome/>
+          <LogoHome />
         </div>
 
         <div className="content-login">
-          
-          <FormLogin/>
+
+          <FormLogin />
 
           <div className="separator-sensei"></div>
 
