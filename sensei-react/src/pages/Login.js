@@ -8,6 +8,7 @@ import '../assets/styles/partials/PageLogin.css';
 import '../assets/styles/medias/PageLoginMedia.css';
 
 export default function Login() {
+  
   return(
     <div id="page-login">
 

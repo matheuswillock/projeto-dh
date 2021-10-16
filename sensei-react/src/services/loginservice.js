@@ -8,31 +8,49 @@ const apiLogin = axios.create({
 const authService = {
   // Definindo a função de login
   async authenticate(data) {
-    await apiLogin.post(`/login/sign/aluno`, data).then((res) => {
-      if(res.status === 200){
-        return res.data;
-      } else return false
-    });
+    let token = await apiLogin.post(`/login/sign/aluno`, data).then((res) => {
+      console.log(res.data);
+      return JSON.stringify(res.data);
+    })/*.catch ((error) => {
+      console.error(`ops! ocorreu um erro: ${error}`);
+      return {auth: 401};
+    });*/
+    return token
   },
 
-  // Função para salar o usuário logado no local storage
-  setLoggedUser(data) {
-    let parsedData = JSON.stringify(data);
-    localStorage.setItem("user", parsedData);
+  validateToken(token) {
+    apiLogin.interceptors.request.use(async config => {
+      if (token) {
+        apiLogin.defaults.headers.authorization = token;
+      }
+
+      return config;
+    })
   },
 
-  // Função responsável por recuperar o usuário logado do local storage
+  // Função para salar o usuário logado no session storage
+  setLoggedUser(token) {
+    sessionStorage.setItem(`TOKEN_KEY_SENSEI`, token);
+  },
+
+  // Função responsável por recuperar o usuário logado do session storage
   getLoggedUser() {
-    let data = localStorage.getItem("user");
+    let data = sessionStorage.getItem(`TOKEN_KEY_SENSEI`);
     if (!data) return null;
     try {
-      let parsedData = JSON.parse(data);
-      return parsedData;
+      return data;
     } catch (error) {
       console.log(error);
       return null;
     }
   },
+
+  isAuthenticated() {
+    if (sessionStorage.getItem(`TOKEN_KEY_SENSEI`) !== null) {
+      return true
+    }
+    else return false
+  }
 };
 
 export default authService;

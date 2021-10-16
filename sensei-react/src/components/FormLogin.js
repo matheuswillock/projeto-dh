@@ -1,20 +1,21 @@
 import React from 'react';
+import { Redirect, useHistory } from 'react-router-dom';
 import { Formik, Form, useField } from "formik";
 import * as Yup from 'yup';
 
 import academiaImg from "../assets/images/academia.svg";
-
 import authService from "../services/loginservice";
 
 require('dotenv').config();
 
 export default function FormLogin() {
+  const history = useHistory();
+
+  //Redireciona para página após Login com sucesso
+  const goLogin = () => history.push('/viewclasses');
 
   const InputField = ({ label, ...props }) => {
 
-    // useField () retorna [formik.getFieldProps (), formik.getFieldMeta ()]
-    // que podemos espalhar em <input>. Podemos usar o campo meta para mostrar um erro
-    // mensagem se o campo é inválido e foi tocado (ou seja, visitado)
     const [field, meta] = useField(props);
     return (
       <>
@@ -31,11 +32,6 @@ export default function FormLogin() {
 
   return (
     <Formik
-
-      // Observe que temos que inicializar TODOS os campos com valores. Esses
-      // pode vir de adereços, mas como não queremos preencher previamente este formulário,
-      // usamos apenas uma string vazia. Se não fizermos isso, React vai gritar
-      // para nós.
       initialValues={
         {
           usuario: '',
@@ -58,22 +54,22 @@ export default function FormLogin() {
       }
 
       onSubmit={
-        (values, { setSubmitting }) => {
-          const auth = authService.authenticate(values, null, 2)
-
-          auth.then((res) => {
-            console.log(res)
-          })
-          setSubmitting(false);
-          /* setTimeout(() => {
-             
-             setSubmitting(false);
-           }, 500);
-           */
+        async (values, { setSubmitting }) => {
+          try {
+            const auth = await authService.authenticate(values)
+            
+            if (JSON.parse(auth).auth === true) {
+              authService.setLoggedUser(JSON.parse(auth).token);
+              goLogin();
+            }
+            setSubmitting(false);
+          } catch (error) {
+            alert(`Valide seu Usuário e Senha pois algo deu errado`)
+            console.log(`Algo deu errado no envio dos dados para Login ${error}`)
+          }
         }
       }
     >
-
       <Form >
         <div className="form">
           <span>
