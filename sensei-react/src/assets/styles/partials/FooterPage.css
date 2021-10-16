@@ -1,0 +1,47 @@
+.footer-page {
+  background: white;
+  border-top: 1px solid #0000001a;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+}
+
+.footer-page p {
+  color: black;
+  font: 400 1.8rem "Roboto";
+}
+
+#made-footer {
+  line-height: 3.2rem;
+}
+
+#reserved-footer {
+  margin-top: 1.4rem;
+}
+
+.footer-page .heart-footer {
+  margin: 0 0.3rem;
+}
+
+#link-footer {
+  text-decoration: none;
+  margin: 0 0.8rem;
+}
+
+.footer-page span {
+  font: 300 3rem "Open Sans";
+  line-height: center;
+  color: black;
+}
+
+.footer-page strong {
+  font-size: 800;
+  color: #e4223a;
+}
+
+.footer-page img {
+  width: 3.5rem;
+  margin-left: 0.2rem;
+}

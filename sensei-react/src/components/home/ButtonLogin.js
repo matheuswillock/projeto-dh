@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import loginImg from '../assets/images/login.svg';
+import loginImg from '../../assets/images/login.svg';
 
 export default function ButtonLogin() {  
   return(

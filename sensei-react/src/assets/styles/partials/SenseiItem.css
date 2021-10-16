@@ -39,8 +39,10 @@
 #page-search .senseis-item p {
   padding: 0 2rem;
 
-  font: 500 1.6rem/2.4rem "Encode Sans";
+  font: 500 2.4rem "Encode Sans";
   color: var(--color-description-sensei);
+  margin-bottom: revert;
+  margin-left: 4rem;
 }
 
 /* ----Main -> article -> footer---------- */

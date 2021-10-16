@@ -1,15 +1,15 @@
 import React, {useEffect, useState} from 'react';
-import api from '../services/api'
+import api from '../../services/api'
 import { Link } from 'react-router-dom';
 
-import '../assets/styles/partials/SenseiItem.css'
+import '../../assets/styles/partials/SenseiItem.css'
 
 export default function SenseiItem() {
   const [user, setUser] = useState();
 
   useEffect(() => {
     api
-      .get("https://api.github.com/users/filipedeschamps")
+      .get("https://api.github.com/users/octocat")
       .then((response) => setUser(response.data))
       .catch((err) => {
         console.error("ops! ocorreu um erro" + err);
@@ -35,7 +35,7 @@ export default function SenseiItem() {
 
       <footer>
         
-        <Link to="/viewclasses" className="button-sensei" type="button" >
+        <Link to="/seeclasses" className="button-sensei" type="button" >
           Ver as Aulas
         </Link>
 

@@ -1,0 +1,56 @@
+#page-not-found {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#container-not-found {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container-not-found h2 {
+  font: 700 20rem "Encode Sans";
+  color: var(--color-title);
+  margin: 0 auto 2rem;
+}
+
+.content-location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0rem auto;
+}
+
+.content-location img {
+  margin-bottom: 2rem;
+  width: 42rem;
+  height: auto;
+}
+
+.content-location p {
+  font: 400 2rem/2.6rem "Poppins";
+  margin: 0 auto 1rem;
+  padding: 1.5rem;
+}
+
+.btn-error {
+  border-radius: 0.8rem;
+  border: 1rem var(--color-button);
+
+  background: var(--color-button);
+
+  width: 12rem;
+  height: 6rem;
+}
+
+.btn-error .link-error {
+  color: var(--color-button-text);
+  font: 600 2.4rem "Roboto";
+}

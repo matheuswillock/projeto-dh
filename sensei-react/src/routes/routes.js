@@ -4,8 +4,10 @@ import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Register from '../pages/Register';
 import Search from '../pages/Search';
-import ViewClasses from '../pages/ViewClasses';
+//import ViewClasses from '../pages/ViewClasses';
 import authService from "../services/loginservice";
+import SeeClasses from '../pages/SeeClasses';
+import NotFound from '../pages/NotFound';
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
     <Route
@@ -28,9 +30,9 @@ const Routes = () => (
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
             <Route path="/search" component={Search} />
-            <PrivateRoute path="/viewclasses" component={ViewClasses} />
-
-            <Route path="*" component={() => <h1>Page not found</h1>} />
+            <PrivateRoute exact path="/seeclasses" component={ SeeClasses } />     
+            <Route component={ NotFound } />
+            <Route path="*" component={ NotFound } />
         </Switch>
     </BrowserRouter>
 );
