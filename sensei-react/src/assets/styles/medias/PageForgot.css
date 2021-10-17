@@ -1,0 +1,27 @@
+/* ----Responsive---------- */
+@media (max-width: 699px) {
+  :root {
+    font-size: 40%;
+    /*Modificar as medidas rem*/
+  }
+
+  #page-forgot #container-forgot {
+    margin: -28rem auto 0;
+  }
+
+  #container-forgot {
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  #page-forgot #container-forgot {
+    margin: 0 auto;
+    max-width: 120rem;
+  }
+
+  .content-forgot {
+    margin-bottom: 20rem;
+  }
+}

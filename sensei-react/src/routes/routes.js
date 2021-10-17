@@ -8,6 +8,7 @@ import Search from '../pages/Search';
 import authService from "../services/loginservice";
 import SeeClasses from '../pages/SeeClasses';
 import NotFound from '../pages/NotFound';
+import ForgotPassWord from '../pages/ForgotPassword';
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
     <Route
@@ -26,10 +27,11 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 const Routes = () => (
     <BrowserRouter>
         <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/login" component={Login} />
-            <Route path="/register" component={Register} />
-            <Route path="/search" component={Search} />
+            <Route exact path="/" component={ Home } />
+            <Route path="/login" component={ Login } />
+            <Route path="/forgotpassword" component={ ForgotPassWord } />
+            <Route path="/register" component={ Register } />
+            <Route path="/search" component={ Search } />
             <PrivateRoute exact path="/seeclasses" component={ SeeClasses } />     
             <Route component={ NotFound } />
             <Route path="*" component={ NotFound } />
