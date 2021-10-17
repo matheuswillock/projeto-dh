@@ -4,15 +4,13 @@ import { Formik, Form, useField } from "formik";
 import * as Yup from 'yup';
 
 import academiaImg from "../../assets/images/academia.svg";
-import authService from "../../services/loginservice";
-
-require('dotenv').config();
+import forgotService from "../../services/forgotPasswordService";
 
 export default function FormLogin() {
   const history = useHistory();
 
   //Redireciona para página após Login com sucesso
-  const goLogin = () => history.push('/seeclasses');
+  const goLogin = () => history.push('/login');
 
   const InputField = ({ label, ...props }) => {
 
@@ -35,7 +33,7 @@ export default function FormLogin() {
       initialValues={
         {
           usuario: '',
-          password: '',
+          email_pessoa: '',
         }
       }
 
@@ -43,12 +41,10 @@ export default function FormLogin() {
         Yup.object({
           usuario: Yup.string()
             .min(6, 'Usuário precisa de 6 caracteres ou mais!')
-            .required('Required')
           ,
-          password: Yup.string()
-            .max(16, 'Senha indevida!')
-            .min(6, 'Senha indevida!')
-            .required('Required')
+          email_pessoa: Yup.string()
+            .max(40, 'email indevida!')
+            .min(6, 'email indevida!')
           ,
         })
       }
@@ -56,15 +52,15 @@ export default function FormLogin() {
       onSubmit={
         async (values, { setSubmitting }) => {
           try {
-            const auth = await authService.authenticate(values)
+            const recover = await forgotService.recoverPassword(values);
             
-            if (JSON.parse(auth).auth === true) {
-              authService.setLoggedUser(JSON.parse(auth).token);
+            if (JSON.parse(recover).RecuperaSenhaSensei.status === true || JSON.parse(recover).RecuperaSenhaAluno.status === true) {
+              alert(`Usuário e senha enviado para o e-mail cadastrado ;)`)
               goLogin();
             }
             setSubmitting(false);
           } catch (error) {
-            alert(`Valide seu Usuário e Senha pois algo deu errado`)
+            alert(`Valide seu Usuário Ou e-mail informado pois Algo de errado`)
             console.log(`Algo deu errado no envio dos dados para Login ${error}`)
           }
         }
@@ -73,7 +69,7 @@ export default function FormLogin() {
       <Form >
         <div className="form">
           <span>
-            Entre na academia
+            Recupere sua Senha de usuário para Continuar a Jornada
           </span>
           <img src={academiaImg} alt="Academia Ninja" />
           <div className="input-field">
@@ -84,13 +80,13 @@ export default function FormLogin() {
               placeholder="Ninja"
             />
             <InputField
-              id="input-field-password"
-              name="password"
-              type="password"
-              placeholder="Digite uma senha"
+              id="input-field-email"
+              name="email_pessoa"
+              type="email"
+              placeholder="Digite seu e-mail"
             />
           </div>
-          <button className="btn-submit" type="submit">Entrar</button>
+          <button className="btn-submit" type="submit">Recuperar</button>
         </div>
       </Form>
     </Formik>
