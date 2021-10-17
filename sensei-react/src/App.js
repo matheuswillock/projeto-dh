@@ -10,23 +10,10 @@ import NotFound from './pages/NotFound';
 export default function App() {
   return (
 
-    // <BrowserRouter>
-      
-      
-
-    //   <Route path="/" exact component={ Home } />
-    //   <Route path="/login" component={ Login } />
-    //   <Route path="/register" component={ Register } />
-    //   <Route path="/search" component={ Search } />
-    //   <Route path="/seeclasses" component={ SeeClasses } />
-      
-    //     <Route component={ NotFound } />
-      
-    // </BrowserRouter>
-
     <Router>
       
       <Switch>
+
         <Route exact path="/" component={ Home } />
         <Route exact path="/login" component={ Login } />
         <Route exact path="/register" component={ Register } />
@@ -36,9 +23,6 @@ export default function App() {
         <Route component={ NotFound } />
 
       </Switch>
-      
-
-      
       
     </Router>
 
