@@ -1,10 +1,20 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
-import { Formik, Form, useField } from "formik";
+import { Formik, Form, useField, Field} from "formik";
 import * as Yup from 'yup';
 
 import academiaImg from "../../assets/images/academia.svg";
 import Register from '../../services/registerService'
+
+// Import imgs perfil
+import BorutoPerfil from "../../assets/images/Perfil-image/boruto-uzumaki.svg"
+import HinataPerfil from "../../assets/images/Perfil-image/hinata-hyuga.svg";
+import kakashiPerfil from "../../assets/images/Perfil-image/kakashi-hatake.svg";
+import NarutoPerfil from "../../assets/images/Perfil-image/naruto-uzumaki.svg";
+import ObitoPerfil from "../../assets/images/Perfil-image/obito-uchiha.svg";
+import SaradaPerfil from "../../assets/images/Perfil-image/sarada-uchiha.svg";
+import TsunadePerfil from "../../assets/images/Perfil-image/tsunade.svg";
+
 
 export default function FormLogin() {
   const history = useHistory();
@@ -104,10 +114,14 @@ export default function FormLogin() {
     >
       <Form >
         <div className="form">
-        <span>Cadastre-se na academia</span>
+
+          <span>Cadastre-se na academia</span>
+
           <img src={academiaImg} alt="Academia Ninja" />
+
           <div className="input-field">
-          <InputField
+
+            <InputField
               id="input-field-nome"
               name="nome"
               type="text"
@@ -176,21 +190,6 @@ export default function FormLogin() {
               type="text"
               placeholder="Selecione seu Avatar"
             />
-            
-            <label for="Aluno">Aluno</label>
-            <InputField 
-              id="input-field-cadastro-aluno"
-              name="cadastro_aluno"
-              type="checkbox"
-              placeholder="Selecione para Cadastro Aluno"
-            />
-            <label for="Aluno">Sensei</label>
-            <InputField 
-              id="input-field-cadastro-sensei"
-              name="cadastro_sensei"
-              type="checkbox"
-              placeholder="Selecione para Cadastro Sensei"
-            />
 
             <InputField
               id="input-field-especialidade"
@@ -198,6 +197,77 @@ export default function FormLogin() {
               type="text"
               placeholder="Seu sua especialidade de Sensei"
             />
+
+            <h2 className="radio-h2">Você será ...</h2>
+
+            <div className="toggle-radio">
+
+              {/* <label for="Aluno">Aluno</label> */}
+              <InputField 
+                id="input-field-cadastro-aluno"
+                name="cadastro_aluno"
+                type="checkbox"
+                labelName="Aluno"
+
+              />
+
+              <InputField 
+                id="input-field-cadastro-sensei"
+                name="cadastro_sensei"
+                type="checkbox"
+                labelName="Sensei"
+
+              />
+
+            </div>
+
+
+            
+
+            <h2 className="radio-h2">Selecione o seu avatar</h2>
+          
+            <div role="group" aria-labelledby="my-radio-group" className="radio-group">
+
+            <label className="radio-label">
+                <Field type="radio" name="avatar" value="../../assets/images/Perfil-image/boruto-uzumaki.svg" />
+                <img className="radio-img" src={BorutoPerfil} />
+              </label>
+
+              <label className="radio-label">
+                <Field type="radio" name="avatar" value="../../assets/images/Perfil-image/hinata-hyuga.svg" />
+                <img className="radio-img" src={HinataPerfil} />
+              </label>
+
+              <label className="radio-label">
+                <Field type="radio" name="avatar" value="../../assets/images/Perfil-image/tsunade.svg" />
+                <img className="radio-img" src={TsunadePerfil} />
+              </label>
+
+              <label className="radio-label">
+                <Field type="radio" name="avatar" value="../../assets/images/Perfil-image/sarada-uchiha.svg" />
+                <img className="radio-img" src={SaradaPerfil} />
+              </label>
+
+              <label className="radio-label">
+                <Field type="radio" name="avatar" value="../../assets/images/Perfil-image/obito-uchiha.svg" />
+                <img className="radio-img" src={ObitoPerfil} />
+              </label>
+
+              <label className="radio-label">
+                <Field type="radio" name="avatar" value="../../assets/images/Perfil-image/naruto-uzumaki.svg" />
+                <img className="radio-img" src={NarutoPerfil} />
+              </label>
+
+              <label className="radio-label">
+                <Field type="radio" name="avatar" value="../../assets/images/Perfil-image/kakashi-hatake.svg" />
+                <img className="radio-img" src={kakashiPerfil} />
+              </label>
+            </div>
+
+
+            
+
+
           </div>
           <button className="btn-submit" type="submit">Cadastrar</button>
         </div>

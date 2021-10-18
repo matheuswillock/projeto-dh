@@ -11,12 +11,7 @@ export default function Register() {
   return (
     <div id="page-register">
       <div id="container-register">
-        {
-          <header>
-            <TopHeader />
-          </header>
-        }
-
+        
         <main>
           <div className="content-register">
             <RegisterForm />
