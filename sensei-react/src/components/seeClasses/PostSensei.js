@@ -10,7 +10,7 @@ export default function PostSensei( props ) {
   const [name, setName] = useState(props.name);
 
 
-  useEffect(() => {
+  /*useEffect(() => {
     api
       .get(`https://api.github.com/users/${name}`)
       .then((response) => {
@@ -22,7 +22,7 @@ export default function PostSensei( props ) {
         console.error("ops! ocorreu um erro" + err);
       });
   }, []);
-
+*/
   return(
 
     <div className="post">
