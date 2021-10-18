@@ -1,44 +1,31 @@
-import React from 'react';
+import React from "react";
 
-import TopHeader from '../components/TopHeader';
-import FooterPage from '../components/FooterPage';
-import RegisterForm from '../components/register/RegisterForm';
+import TopHeader from "../components/TopHeader";
+import FooterPage from "../components/FooterPage";
+import RegisterForm from "../components/register/RegisterForm";
 
-import '../assets/styles/Main.css';
-import '../assets/styles/partials/PageRegister.css';
+import "../assets/styles/Main.css";
+import "../assets/styles/partials/PageRegister.css";
 
 export default function Register() {
-  return(
-
+  return (
     <div id="page-register">
-
       <div id="container-register">
-        {/* <header>
-          <TopHeader /> 
-        </header> */}
+        {
+          <header>
+            <TopHeader />
+          </header>
+        }
 
         <main>
-
           <div className="content-register">
             <RegisterForm />
           </div>
-
         </main>
-
-        
-        
       </div>
-
       <footer>
-          <FooterPage/>
-        </footer>
+        <FooterPage />
+      </footer>
     </div>
-
-    
-
-
-    
-
-
   );
 }
