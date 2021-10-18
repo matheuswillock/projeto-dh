@@ -1,5 +1,4 @@
 #page-register #container-register {
-  height: 100vh;
   width: 100vw;
   max-width: 70rem;
   margin: -4.9rem auto 0;
@@ -20,4 +19,40 @@
   box-shadow: 0.8rem 0.8rem 1.8rem #4b5b7d;
   border: 0.2rem solid #4b5b7d;
   border-radius: 0.8rem;
+}
+
+.radio-h2 {
+  font: 600 2.6rem "Encode sans";
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.radio-group {
+  border-radius: 0.8rem;
+  border: solid 0.3rem #707d97;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  justify-content: center;
+}
+
+.toggle-radio {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+
+  font: 600 2rem "Encode sans";
+  color: #707d97;
+
+  margin-top: -2rem;
 }

@@ -76,7 +76,7 @@
 
   font: 700 2rem/1.4rem "Encode Sans";
   height: 3.8rem;
-  color: var(--color-text-forgot);
+  color: var(--color-text-login);
 
   background-color: #6ab0ae;
   text-decoration: none;
