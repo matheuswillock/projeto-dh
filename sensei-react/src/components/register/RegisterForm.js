@@ -185,13 +185,6 @@ export default function FormLogin() {
             />
 
             <InputField
-              id="input-field-avatar"
-              name="avatar"
-              type="text"
-              placeholder="Selecione seu Avatar"
-            />
-
-            <InputField
               id="input-field-especialidade"
               name="especialidade"
               type="text"
@@ -202,7 +195,7 @@ export default function FormLogin() {
 
             <div className="toggle-radio">
 
-              {/* <label for="Aluno">Aluno</label> */}
+
               <InputField 
                 id="input-field-cadastro-aluno"
                 name="cadastro_aluno"
@@ -220,9 +213,6 @@ export default function FormLogin() {
               />
 
             </div>
-
-
-            
 
             <h2 className="radio-h2">Selecione o seu avatar</h2>
           
